@@ -1,0 +1,285 @@
+/* ================================================
+   PHIM YÊU THÍCH - Stylesheet (Homework Two Style)
+   Phong cách đơn giản, giống như người mới học web
+   Tập trung vào: display, width, list-style,
+   grid-template-columns, flex-wrap, justify-content, align-items
+   ================================================ */
+
+/* ── 1. RESET CƠ BẢN ── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdf8f0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── 2. SKIP TO MAIN CONTENT ── */
+.skip-link {
+  display: block;
+  color: #4b0082;
+  font-size: 16px;
+  padding: 4px 8px;
+  text-decoration: underline;
+}
+
+.skip-link:hover {
+  color: #800080;
+}
+
+/* ── 3. HEADER ── */
+#site-header {
+  background-color: #cccccc;
+  padding: 10px 20px 20px 20px;
+}
+
+/* ── 4. NAV ── */
+#main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  flex: 1;
+}
+
+#main-nav ul li {
+  list-style-type: none;
+}
+
+#main-nav a {
+  color: #4b0082;
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+#main-nav a:hover {
+  text-decoration: underline;
+}
+
+#main-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Ảnh logo nhỏ góc phải header */
+#header-img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #888888;
+}
+
+/* Tiêu đề trang trong header */
+#site-header h1 {
+  font-family: "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+  color: #2e008b;
+  font-size: 2.4em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+/* ── 5. MAIN CONTENT ── */
+#main-content {
+  padding: 0;
+}
+
+/* ── 6. SECTIONS ── */
+section {
+  padding: 20px 20px;
+}
+
+/* Trang chủ - phần intro vàng */
+#intro {
+  display: block;
+  background-color: #ffff00;
+  width: 100%;
+}
+
+#intro p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+#intro a {
+  color: #4b0082;
+  text-decoration: underline;
+}
+
+/* Trang chủ - phần about (danh sách) */
+#about {
+  display: block;
+  background-color: #fdf8f0;
+  width: 100%;
+}
+
+#about h2 {
+  font-family: Georgia, serif;
+  color: #2e008b;
+  margin-bottom: 12px;
+}
+
+#about ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+#about ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ── 7. TRANG PHIM - GRID 2 CỘT ── */
+#movie-list {
+  background-color: #ffff00;
+  width: 100%;
+}
+
+#movie-list h2 {
+  font-family: Georgia, serif;
+  color: #2e008b;
+  margin-bottom: 10px;
+}
+
+#movie-list > p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Grid 2 cột cho ảnh phim */
+#phim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
+.phim-item {
+  display: block;
+  background-color: #ffff00;
+}
+
+.phim-item img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid #cccccc;
+}
+
+.phim-item h3 {
+  font-family: Georgia, serif;
+  color: #2e008b;
+  font-size: 1.1em;
+  margin: 8px 0 4px 0;
+}
+
+.phim-item p {
+  font-size: 0.9em;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+}
+
+/* ── 8. TRANG RẠP CHIẾU ── */
+#rap-info {
+  background-color: #ffff00;
+  width: 100%;
+}
+
+#rap-info h2 {
+  font-family: Georgia, serif;
+  color: #2e008b;
+  margin-bottom: 12px;
+}
+
+#rap-info p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* Ảnh rạp phim - hiển thị toàn bề rộng */
+#rap-anh {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+}
+
+#rap-anh img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #888888;
+}
+
+/* Thông tin rạp */
+#rap-thong-tin {
+  background-color: #fdf8f0;
+  width: 100%;
+}
+
+#rap-thong-tin h2 {
+  font-family: Georgia, serif;
+  color: #2e008b;
+  margin-bottom: 12px;
+}
+
+#rap-thong-tin ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+#rap-thong-tin ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* ── 9. FOOTER ── */
+#site-footer {
+  background-color: #cccccc;
+  padding: 12px 20px;
+  font-size: 0.9em;
+  color: #333333;
+  border-top: 2px solid #aaaaaa;
+}
+
+#site-footer a {
+  color: #4b0082;
+  text-decoration: underline;
+}
+
+#site-footer a:hover {
+  color: #800080;
+}
+
+/* ── 10. LIÊN KẾT CHUNG ── */
+a {
+  color: #4b0082;
+}
+
+a:hover {
+  color: #800080;
+}
+
+/* ── 11. HÌNH ẢNH CHUNG ── */
+img {
+  max-width: 100%;
+  height: auto;
+}
