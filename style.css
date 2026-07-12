@@ -1,11 +1,4 @@
-/* ================================================
-   PHIM YÊU THÍCH - Stylesheet (Homework Two Style)
-   Phong cách đơn giản, giống như người mới học web
-   Tập trung vào: display, width, list-style,
-   grid-template-columns, flex-wrap, justify-content, align-items
-   ================================================ */
 
-/* ── 1. RESET CƠ BẢN ── */
 * {
   box-sizing: border-box;
 }
